@@ -12,16 +12,16 @@ const Header = () => {
             <a href="#inicio">Início</a>
           </li>
           <li>
-            <a href="#Cafés quentes">Cafés quentes</a>
+            <a href="#Cafes">Cafés quentes</a>
           </li>
           <li>
-            <a href="#Cafés frios">Cafés frios</a>
+            <a href="#Cafes">Cafés frios</a>
           </li>
           <li>
-            <a href="#Chás quentes">Chás quentes</a>
+            <a href="#Chas">Chás quentes</a>
           </li>
           <li>
-            <a href="#Chás frios">Chás frios</a>
+            <a href="#Chas">Chás frios</a>
           </li>
           <li>
             <a href="#Acompanhamentos">Acompanhamentos</a>
