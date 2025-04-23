@@ -1,36 +1,38 @@
 import React from "react";
-import chaaromatico from "../Imagens/cha-aromatico.png";
-import chamel from "../Imagens/cha-de-mel-de-gengibre-e-limao.png";
-import chacitrus from "../Imagens/cha-gelado-citrus.png";
-import chagengibre from "../Imagens/cha-gengibre-mel.png";
-import chapreto from "../Imagens/cha-preto-com-limao.png";
-import chaervas from "../Imagens/limao-cha-de-ervas.png";
-import chagelado from "../Imagens/refrigerante-cha-gelado.png";
-import chamelancia from "../Imagens/refrigerante-cha-gelado-melancia.png";
-import chavermelho from "../Imagens/refrigerante-vermelho.png";
-import chaindiano from "../Imagens/masala-chai-indiano 1.png";
-import "../Styles/Chas.scss";
+import espresso from "../Imagens/espresso.png";
+import macchiato from "../Imagens/macchiato.png";
+import mocaccino from "../Imagens/mocaccino.png";
+import latteMacchiato from "../Imagens/Latte-Macchiato.png";
+import latte from "../Imagens/Café-Latte.png";
+import icedCoffee from "../Imagens/Iced-Coffee.png";
+import icedCreme from "../Imagens/iced-coffee-com-Creme.png";
+import frappe from "../Imagens/Frappé-de-Café-com-Leite.png";
+import icedAmericano from "../Imagens/Iced-Americano.png";
+import capuccino from "../Imagens/Capuccino-Gelado.png";
+import "../Styles/Cafes.scss";
 
-function Chas() {
+function Cafes() {
   return (
-    <div className="chas" id="Chas">
+    <div className="cafes" id="Cafes">
       <div className="container-colunas">
+        {" "}
+        {/* Novo contêiner para as duas colunas */}
         <ul className="coluna-1">
-          <h2>Chás Quentes</h2>
+          <h2>Cafés Quentes</h2>
           <li>
             <div className="produto-card">
               <div className="imagem-produto">
-                <img src={chaindiano} alt="cha-indiano" />
+                <img src={espresso} alt="Café Espresso" />
               </div>
               <div className="detalhes-produto">
                 <div className="titulo-preco">
                   <hr />
-                  <span className="titulo">Chá Indiano</span>
+                  <span className="titulo">Café Espresso</span>
                 </div>
                 <div className="ingredientes">
                   <span>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                    Café torrado moído, com aroma aveludado, frutado e
+                    equilibrado.
                   </span>
                 </div>
                 <div className="preco">R$ 4,50</div>
@@ -40,183 +42,180 @@ function Chas() {
           <li>
             <div className="produto-card">
               <div className="imagem-produto">
-                <img src={chaervas} alt="cha-ervas" />
+                <img src={macchiato} alt="Macchiato" />
               </div>
               <div className="detalhes-produto">
                 <div className="titulo-preco">
                   <hr />
-                  <span className="titulo">Chá de Ervas</span>
+                  <span className="titulo">Macchiato</span>
                 </div>
                 <div className="ingredientes">
                   <span>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                    Café espresso (base forte), leite vaporizado, espuma de
+                    leite e farofa crocante
                   </span>
                 </div>
-                <div className="preco">R$ 4,50</div>
+                <div className="preco">R$ 18,90</div>
               </div>
             </div>
           </li>
           <li>
             <div className="produto-card">
               <div className="imagem-produto">
-                <img src={chaaromatico} alt="cha-aromatico" />
+                <img src={mocaccino} alt="Mocaccino" />
               </div>
               <div className="detalhes-produto">
                 <div className="titulo-preco">
                   <hr />
-                  <span className="titulo">Chá Aromático</span>
+                  <span className="titulo">Mocaccino</span>
                 </div>
                 <div className="ingredientes">
                   <span>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                    Café espresso, leite vaporizado, calda de chocolate,
+                    Chantilly e raspas de chocolate
                   </span>
                 </div>
-                <div className="preco">R$ 4,50</div>
+                <div className="preco">R$ 14,00</div>
               </div>
             </div>
           </li>
           <li>
             <div className="produto-card">
               <div className="imagem-produto">
-                <img src={chamel} alt="cha-mel" />
+                <img src={latteMacchiato} alt="Latte Macchiato" />
               </div>
               <div className="detalhes-produto">
                 <div className="titulo-preco">
                   <hr />
-                  <span className="titulo">Chá com mel</span>
+                  <span className="titulo">Latte Macchiato</span>
                 </div>
                 <div className="ingredientes">
                   <span>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                    Leite quente vaporizado, café espresso , espuma de leite,
+                    Canela ou cacau em pó.
                   </span>
                 </div>
-                <div className="preco">R$ 4,50</div>
+                <div className="preco">R$ 16,80</div>
               </div>
             </div>
           </li>
           <li>
             <div className="produto-card">
               <div className="imagem-produto">
-                <img src={chagengibre} alt="cha-gengibre" />
+                <img src={latte} alt="Latte" />
               </div>
               <div className="detalhes-produto">
                 <div className="titulo-preco">
                   <hr />
-                  <span className="titulo">Chá com gengibre</span>
+                  <span className="titulo">Latte</span>
                 </div>
                 <div className="ingredientes">
                   <span>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                    Uma dose de espresso, leite vaporizado e uma fina camada de
+                    espuma de leite
                   </span>
                 </div>
-                <div className="preco">R$ 4,50</div>
+                <div className="preco">R$ 18,00</div>
               </div>
             </div>
           </li>
         </ul>
         <ul className="coluna-2">
-          <h2>Chás Gelados</h2>
+          <h2>Cafés Gelados</h2>
           <li>
             <div className="produto-card">
               <div className="imagem-produto">
-                <img src={chacitrus} alt="cha-citrus" />
+                <img src={icedCoffee} alt="Iced Coffee" />
               </div>
               <div className="detalhes-produto">
                 <div className="titulo-preco">
                   <hr />
-                  <span className="titulo">Chá Citrus</span>
+                  <span className="titulo">Iced Coffee</span>
                 </div>
                 <div className="ingredientes">
-                  <span>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
-                  </span>
+                  <span>Café forte espresso, leite, gelo, xarope e creme</span>
                 </div>
-                <div className="preco">R$ 4,50</div>
+                <div className="preco">R$ 15,99</div>
               </div>
             </div>
           </li>
           <li>
             <div className="produto-card">
               <div className="imagem-produto">
-                <img src={chagelado} alt="cha-gelado" />
+                <img src={icedCreme} alt="Iced Creme" />
               </div>
               <div className="detalhes-produto">
                 <div className="titulo-preco">
                   <hr />
-                  <span className="titulo">Chá Gelado</span>
+                  <span className="titulo">Iced Creme</span>
                 </div>
                 <div className="ingredientes">
                   <span>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                    Café espresso bem forte, cubos de gelo, calda de caramelo ou
+                    doce de leite, creme batido com sabor tipo chantilly
+                    caramelizado e Topping (granulado e raspas de chocolate)
                   </span>
                 </div>
-                <div className="preco">R$ 4,50</div>
+                <div className="preco">R$ 20,80</div>
               </div>
             </div>
           </li>
           <li>
             <div className="produto-card">
               <div className="imagem-produto">
-                <img src={chamelancia} alt="cha-melancia" />
+                <img src={frappe} alt="Frappe" />
               </div>
               <div className="detalhes-produto">
                 <div className="titulo-preco">
                   <hr />
-                  <span className="titulo">Chá com Melancia</span>
+                  <span className="titulo">Frappe</span>
                 </div>
                 <div className="ingredientes">
                   <span>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                    Café solúvel gelado, leite gelado, gelo, xarope de caramelo
+                    e chantilly de café por cima
                   </span>
                 </div>
-                <div className="preco">R$ 4,50</div>
+                <div className="preco">R$ 30,00</div>
               </div>
             </div>
           </li>
           <li>
             <div className="produto-card">
               <div className="imagem-produto">
-                <img src={chapreto} alt="cha-preto" />
+                <img src={icedAmericano} alt="Iced Americano" />
               </div>
               <div className="detalhes-produto">
                 <div className="titulo-preco">
                   <hr />
-                  <span className="titulo">Chá Preto</span>
+                  <span className="titulo">Iced Americano</span>
                 </div>
                 <div className="ingredientes">
                   <span>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                    cold brew, gelo, leite, xarope e calda de chocolate
                   </span>
                 </div>
-                <div className="preco">R$ 4,50</div>
+                <div className="preco">R$ 16,90</div>
               </div>
             </div>
           </li>
           <li>
             <div className="produto-card">
               <div className="imagem-produto">
-                <img src={chavermelho} alt="cha-vermelho" />
+                <img src={capuccino} alt="Capuccino Gelado" />
               </div>
               <div className="detalhes-produto">
                 <div className="titulo-preco">
                   <hr />
-                  <span className="titulo">Chá Vermelho</span>
+                  <span className="titulo">Capuccino</span>
                 </div>
                 <div className="ingredientes">
                   <span>
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                    café solúvel, leite integral, essência de baunilha, gelo,
+                    leite em pó, chocolate em pó, leite condensado e chantilly
                   </span>
                 </div>
-                <div className="preco">R$ 4,50</div>
+                <div className="preco">R$ 20,00</div>
               </div>
             </div>
           </li>
@@ -226,5 +225,5 @@ function Chas() {
   );
 }
 
-export default Chas;
-export { Chas };
+export default Cafes;
+export { Cafes };
